@@ -8,7 +8,7 @@ function S = entropy(A)
 % G = double(A > 0);
 % P = sum(G,2)'/sum(sum(G));
 
-% Modification by Suman: sticking in the 'largestreal' just as a precaution since we are dealing with directed networks.
+% 
 
 [P,~] = eigs(A',1, 'largestreal');
 P = P'/sum(P);
